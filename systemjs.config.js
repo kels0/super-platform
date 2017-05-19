@@ -7,8 +7,6 @@
   var map = {
     'app':                        'dist', // 'dist',
     '@angular':                   'node_modules/@angular',
-    '@cloudinary/angular':        'node_modules/@cloudinary/angular',
-    'cloudinary-core':            'node_modules/cloudinary-core',
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
     'rxjs':                       'node_modules/rxjs',
     'ng2-file-upload':            'node_modules/ng2-file-upload'
@@ -16,9 +14,7 @@
   // packages tells the System loader how to load when no filename and/or no extension
   var packages = {
     'app':                        { main: 'main.js',  defaultExtension: 'js' },
-    '@cloudinary/angular':        { main: 'index.js', defaultExtension: 'js' },
     'ng2-file-upload':            { main: 'ng2-file-upload.js', defaultExtension: 'js' },
-    'cloudinary-core':            { main: 'cloudinary-core-shrinkwrap.js', defaultExtension: 'js' },
     'rxjs':                       { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
   };
