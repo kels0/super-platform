@@ -8,6 +8,7 @@ import {HttpModule} from '@angular/http';
 import {AppComponent} from './app.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {TopbarComponent} from './top-bar/top-bar.component';
+import {SearchPageComponent} from './search-page/search-page.component';
 import {routing} from './app.routing';
 
 @NgModule({
@@ -19,7 +20,8 @@ import {routing} from './app.routing';
     declarations: [
         AppComponent,
         DashboardComponent,
-        TopbarComponent
+        TopbarComponent,
+        SearchPageComponent
     ],
 
     bootstrap: [AppComponent]

@@ -1,4 +1,10 @@
 <div class="dashboard">
-    <top-bar></top-bar>
-    <div class="home-page"></div>
+    <top-bar (changeCurrentPage)="changePage($event)"></top-bar>
+    <div [ngSwitch]="page">
+        <div *ngSwitchCase="'hem'">HEM</div>
+        <div *ngSwitchCase="'hitta'"><search-page></search-page></div>
+        <div *ngSwitchCase="'boka'">BOKA</div>
+        <div *ngSwitchCase="'login'">LOGGA IN</div>
+        <div *ngSwitchDefault>Default Template</div>
+    </div>
 </div>

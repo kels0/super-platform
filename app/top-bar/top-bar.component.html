@@ -5,7 +5,7 @@
             <a class="navbar-brand">Välkommen</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                <li *ngFor="let button of buttons" ><a href="#{{button.value}}">{{button.name}}</a></li>
+                <li *ngFor="let button of buttons" ><a (click)="updatePage(button.value)">{{button.name}}</a></li>
             </ul>
         </div>
     </nav>

@@ -7,7 +7,10 @@ import {Component} from '@angular/core';
 })
 
 export class DashboardComponent {
-
+    public page: string;
     constructor() { }
 
+    public changePage(page: string) {
+        this.page = page; 
+    }
 }
