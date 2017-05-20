@@ -1,1 +1,12 @@
-<div class="top-bar">top bar {{title}}</div>
+<div class="top-bar">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand">Välkommen</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li *ngFor="let button of buttons" ><a href="#{{button.value}}">{{button.name}}</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
